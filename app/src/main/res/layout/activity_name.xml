@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/gradient1"
+    tools:context=".NameActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText1"
+        android:textSize="25sp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_margin="15sp"
+        android:textStyle="bold"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="text"
+        android:hint="Enter First Player Name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_margin="15sp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="text"
+        android:hint="Enter Second Player Name"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the Game"
+        android:id="@+id/btn1"
+        android:layout_margin="25sp"
+        android:padding="5sp"
+        android:backgroundTint="#D82E2E"
+        android:textSize="25sp"/>
+</LinearLayout>
