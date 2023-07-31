@@ -10,6 +10,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
+
+    // Creating Buttons
     Button btn1, btn2, btn3, btn4, btn5, btn6, btn7, btn8, btn9;
     String b1, b2, b3, b4, b5, b6, b7, b8, b9;
 
@@ -26,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
 
         Intent player = getIntent();
 
+        // Defining Players
         player1 = player.getStringExtra("Player1");
         player2 = player.getStringExtra("Player2");
 
@@ -34,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void init() {
+
+        // Widget Declarations
         btn1 = findViewById(R.id.btn1);
         btn2 = findViewById(R.id.btn2);
         btn3 = findViewById(R.id.btn3);
@@ -61,7 +66,6 @@ public class MainActivity extends AppCompatActivity {
             }
 
             if (count > 4) {
-
                 b1 = btn1.getText().toString();
                 b2 = btn2.getText().toString();
                 b3 = btn3.getText().toString();
@@ -72,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                 b8 = btn8.getText().toString();
                 b9 = btn9.getText().toString();
 
-                // Conditions
+                // Conditions for win
                 if (b1.equals(b2) && b2.equals(b3) && !b1.equals("")) {
                     //1
                     winner(b1);
@@ -121,6 +125,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
+    // Reset
     public void reset() {
         btn1.setText("");
         btn2.setText("");
@@ -135,6 +141,8 @@ public class MainActivity extends AppCompatActivity {
         count = 0;
     }
 
+
+    // Defining Winner
     public void winner(String btn) {
         if(btn.equals("X")){
             Toast.makeText(this, "Winner is: " + player1, Toast.LENGTH_SHORT).show();

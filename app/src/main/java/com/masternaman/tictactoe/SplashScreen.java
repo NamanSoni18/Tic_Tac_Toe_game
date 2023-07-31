@@ -15,13 +15,17 @@ public class SplashScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_splash_screen);
         getSupportActionBar().hide();
 
+        // Widget Declaration
         laView = findViewById(R.id.lottie_animation);
 
         Intent iSplash = new Intent(SplashScreen.this, NameActivity.class);
 
+
+        // Splash Screen activity
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {

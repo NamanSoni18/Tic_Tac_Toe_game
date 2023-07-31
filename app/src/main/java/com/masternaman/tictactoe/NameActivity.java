@@ -10,6 +10,7 @@ import android.widget.EditText;
 
 public class NameActivity extends AppCompatActivity {
 
+    // Creating Variables
     EditText editText1, editText2;
     Button btn1;
 
